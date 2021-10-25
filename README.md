@@ -30,5 +30,5 @@ Week3:working on the website designing and the vedio processing in website
 
 Week4:working on the completion of website designing
 
-Week5: Testing the website and completing the documnetation.
+Week5: Testing the website and completing the documentation.
 
