@@ -21,14 +21,14 @@ Work Plan:- ![My DPM Project drawio](https://user-images.githubusercontent.com/2
 
 
 Weekly Plan
+
 Week1 :Working on basic code, data gathering
 
 Week2:working on the complete code in python.
 
-Week3,4:working on the website and the remaining chunks of the code
+Week3:working on the website designing and the vedio processing in website
 
-Week5:working on the completion of website designing
+Week4:working on the completion of website designing
 
-Week6: Testing the website.
+Week5: Testing the website and completing the documnetation.
 
-Week7:documentation and pending works
