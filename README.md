@@ -16,4 +16,4 @@ timestamp and total number of people throughout the time span of video.
 
 Data:- We will use user’s uploaded video as our data.
 
-Work Plan:- ![My DPM Project drawio](https://user-images.githubusercontent.com/29746797/138662931-8d8feda7-b62d-4e57-bcd8-9490f723764f.png)
+<!--- Work Plan:- ![My DPM Project drawio](https://user-images.githubusercontent.com/29746797/138662931-8d8feda7-b62d-4e57-bcd8-9490f723764f.png) --->
