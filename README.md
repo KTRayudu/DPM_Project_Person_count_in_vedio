@@ -22,7 +22,7 @@ Work Plan:- ![My DPM Project drawio](https://user-images.githubusercontent.com/2
 
 Weekly Plan
 
-Week1 :Working on basic code, data gathering
+Week1 :Working on basic code like FPS caluclating, data gathering and basic website.
 
 Week2:working on the complete code in python.
 
