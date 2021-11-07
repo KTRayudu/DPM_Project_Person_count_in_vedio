@@ -1,0 +1,57 @@
+<!doctype html>
+<title>Video Statistics</title>
+<h1 style="font-family: 'Times New Roman', Times, serif;text-align: center;color: brown;"> Welcome to the website please put in the link of video or upload the video which you want to analyse. </h1>
+<center><h2>Select a video to upload and play</h2></center>
+<body style="background: aquamarine;"></body>
+
+<center><p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p>
+{% if filename %}
+	<div style="margin: 10px auto;">
+		<video autoplay="autoplay" controls="controls" preload="preload">
+			<source src="{{ url_for('display_video', filename=filename) }}" type="video/mp4"></source>
+		</video>
+	</div>
+{% endif %}
+<form method="post" action="/" enctype="multipart/form-data">
+    <dl>
+		<p>
+			<input type="file" name="file" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" value="Upload">
+	</p>
+	<label for="fname">
+   <p>Enter your first name</p><br>
+    </label>
+    <input type="text" name="fname">
+    <label for="lname">
+        <p>Enter your last name</p><br>
+    </label>
+    <input type="text" name="lname">
+    <label for="live">
+        <p title="Results will be generated while running the video">Do you want real time processing ?</p>
+    </label>
+    <input type="radio" id="live_yes" name="processing_type">
+    <label for="live_yes">Realtime Processing</label><br>
+    <input type="radio" id="live_no"  name="processing_type">
+	<label for="live_no">Offline Processing</label><br>
+    <a href="https://onlinevideoconverter.com">To convert your video to mp4 format click here !</a>
+</form></center>
+<footer>
+    <p style="text-align: center;">Website created using <a href="https://flask.palletsprojects.com/en/2.0.x/">Flask</a></p>
+    <p style="color: crimson; text-align: center;">Work in progress</p>
+</footer>
+
+</body>
+</html>
