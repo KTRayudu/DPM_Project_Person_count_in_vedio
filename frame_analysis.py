@@ -24,7 +24,7 @@ if __name__ == '__main__':
   ClassIndex, confidence, bbox = model.detect(img, confThreshold=0.6) # returns those classes which have higher 
                     # x% confidence
 
-  # Printing Result
+  # Printing Result here
 
   # which all classes present in the frame ?
   for idx in ClassIndex:
