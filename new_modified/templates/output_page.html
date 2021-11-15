@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Processing</title>
+{{js_resources|indent(4)|safe}}
+{{css_resources|indent(4)|safe}}
+{{plot_script|indent(4)|safe}}
+{% endblock %}
+
+{% block content %}
+    <center><h1>Live graph</h1></center>
+    <center>{% if filename %}
+	<div style="margin: 10px auto;">
+		<video autoplay="autoplay" controls="controls" preload="preload">
+			<source src="{{ url_for('display_video', filename=filename) }}" type="video/mp4"></source>
+		</video>
+	</div></center>
+{% endif %}
+<div style="display: flex; justify-content: center;">
+  {{ plot_div|indent(4)|safe }}
+</div>
+{% endblock %}
